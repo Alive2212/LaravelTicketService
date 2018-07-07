@@ -21,6 +21,7 @@ class CreateAliveTicketsTable extends Migration
 
             // author
             $table->unsignedInteger('author_id')
+                ->nullable()
                 ->index();
             $table->foreign('author_id')
                 ->references('id')
